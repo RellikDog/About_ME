@@ -48,7 +48,7 @@ console.log('Do they think I like cottage cheese?: ' + cCLove);
 //is watermelon my favorite fruit?=q6
 var wMelon = prompt('Do you think the watermelon is my favorite fruit?');
 while (wMelon.toUpperCase() !== 'YES' && wMelon.toUpperCase() !== 'Y' && wMelon.toUpperCase() !=='NO' && wMelon.toUpperCase() !== 'N') {
-    alert('This is the last question '+userName+, 'please submit a valid answer.');
+    alert('This is the last question, '+ userName+ ' please submit a valid answer.');
     var wMelon = prompt('Do you think the watermelon is my favorite fruit?');
 }
 if (wMelon === 'YES' || wMelon === 'Y') {
