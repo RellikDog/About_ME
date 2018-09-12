@@ -6,9 +6,11 @@ var userName=prompt('Welcome to my favorite foods page! What should I call you?'
         console.log('visitors name: '+userName);
 
 //Do I love pizza?
-var pizzalove=prompt('Do you think I love pizza?');
+var pizzaLove=prompt('Do you think I love pizza?');
     if(pizzaLove.toUpperCase()==='YES'||pizzaLove.toUpperCase()==='Y'){
         alert('Of course!');
     } else {
-    alert('...no way...');
-        } 
+    alert('...I love pizza...');
+        }
+        console.log('Do they think I like pizza?:'+pizzaLove);
+         
