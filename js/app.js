@@ -15,7 +15,7 @@ var pizzaLove=prompt('Do you think I love pizza?');
         console.log('Do they think I like pizza?:'+pizzaLove);
 
 //Do I like hawaian pizza?
-var hawPiz=prompt('Not so hard because who doesn\'t love pizza? But do you think I like the most controversial of all pies? I\'m speaking of course of the canadian bacon and pineapple.');
+var hawPiz=prompt('Not so hard because who doesn\'t love pizza? But do you think I like the most controversial of all pies? I\'m speaking, of course, about the canadian bacon and pineapple.');
         if(hawPiz.toUpperCase()==='YES'||hawPiz.toUpperCase()==='Y'){
             alert('You got it!');
         }else if(hawPiz.toUpperCase()==='NO'||hawPiz.toUpperCase()==='N'){
