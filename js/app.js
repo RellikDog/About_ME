@@ -35,7 +35,7 @@ var sushiLove=prompt('OK lets try another food. Do  you think I like sushi?');
                     console.log('Do they think I like sushi?: '+sushiLove);
 
 //Do I like cottage cheese?=q5
-var cCLove=prompt('If someone offered me a free tub of cottage chhese would I take it?');
+var cCLove=prompt('If someone offered me a free tub of cottage cheese would I take it?');
     if(cCLove.toUpperCase()==='YES'||cCLove.toUpperCase()==='Y'){
         alert('NO!');
     }else if(cCLove.toUpperCase()==='NO'||cCLove.toUpperCase()==='N'){
@@ -44,3 +44,16 @@ var cCLove=prompt('If someone offered me a free tub of cottage chhese would I ta
                 alert('Do you usually strugle wuith instructions?');
             }
                     console.log('Do they think I like cottage cheese?: '+cCLove);
+
+//is watermelon my favorite fruit?=q6
+var wMelon=prompt('Do you think the watermelon is my favorite fruit?');
+    while(wMelon.toUpperCase()!='YES'||wMelon.toUpperCase()!='Y'||wMelon.toUpperCase()!='NO'||wMelon.toUpperCase()!='N'){
+        alert('This is the last question, please submit a valid answer.')
+        var wMelon=prompt('Do you think the watermelon is my favorite fruit?');
+    }
+        if(wMelon.toUpperCase()!='YES'||wMelon.toUpperCase()!='Y'){
+            alert(userName+'... YOU\'RE RIGHT!');
+        }else {
+                alert(userName+'*sigh* it\'s ok you don\'t know me.');
+            }
+                console.log('do they think that watermelon is my favorite fruit?'+wMelon);
