@@ -15,7 +15,7 @@ if (pizzaLove.toUpperCase() === 'YES' || pizzaLove.toUpperCase() === 'Y') {
 console.log('Do they think I like pizza?:' + pizzaLove);
 
 //Do I like hawaian pizza?=q3
-var hawPiz = prompt('Not so hard because who doesn\'t love pizza? But do you think I like the most controversial of all pies? I\'m speaking, of course, about the canadian bacon and pineapple.');
+var hawPiz = prompt('Not so hard because who doesn\'t love pizza? But do you think I like the most controversial of all pies? I\'m speaking, obviously, of canadian bacon and pineapple.');
 if (hawPiz.toUpperCase() === 'YES' || hawPiz.toUpperCase() === 'Y') {
     alert('You got it!');
 } else if (hawPiz.toUpperCase() === 'NO' || hawPiz.toUpperCase() === 'N') {
@@ -51,9 +51,11 @@ while (wMelon.toUpperCase() !== 'YES' && wMelon.toUpperCase() !== 'Y' && wMelon.
     alert('This is the last question, '+ userName+ ' please submit a valid answer.');
     var wMelon = prompt('Do you think the watermelon is my favorite fruit?');
 }
-if (wMelon === 'YES' || wMelon === 'Y') {
+if (wMelon.toUpperCase() === 'YES' || wMelon.toUpperCase() === 'Y') {
     alert(userName + '... YOU\'RE RIGHT!');
-} else if (wMelon === 'NO' || wMelon === 'N') {
+} else if (wMelon.toUpperCase() === 'NO' || wMelon.toUpperCase() === 'N') {
     alert(userName + '*sigh* it\'s ok you don\'t know me.');
+}else {
+    alert('I don\'t klnow how you did it but congrats');
 }
 console.log('do they think that watermelon is my favorite fruit?' + wMelon);
