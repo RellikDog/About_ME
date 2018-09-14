@@ -83,3 +83,27 @@ if (wMelon.toUpperCase() === 'YES' || wMelon.toUpperCase() === 'Y') {
     alert('I don\'t klnow how you did it but congrats');
 }
 console.log('do they think that watermelon is my favorite fruit?' + wMelon);
+
+
+//guess the highest mountain I've climbed=q7
+//thanks to https://gomakethings.com/converting-strings-to-numbers-with-vanilla-javascript/ for turning stings into numbers
+var answ = 14000;
+for (var i = 4; i > 0; i--) {
+    var iTxt = i.toString();
+    var quest = prompt('About how high in feet is the highest mountain I have ever climbed? You have ' + iTxt + ' guesses left');
+    var questNum = parseInt(quest,10);
+    if (questNum === answ) {
+        alert('Wow You got it right!');
+        break;
+    } else if (quest > answ) {
+        alert('Thats too high try a lower number');
+    } else if (quest < answ) {
+        alert('The mountain was taller then that. Try a higher number.');
+    } else {
+        alert('Please enter a number.')
+    }
+}
+
+if (questNum !== answ) {
+    alert('Don\'t worry about it that was a hard question. The correct answer was 14,000');
+}
