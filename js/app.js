@@ -1,7 +1,7 @@
 'use strict';
 
 //welcome user to my page and ask their name=q1
-let isValid = false;
+var isValid = false;
 while(!isValid){
     var userName = prompt('Welcome to my favorite foods page! What should I call you?');
     if (userName == null || userName === '' || !userName){
@@ -11,18 +11,22 @@ while(!isValid){
         isValid = true;
     }
 }
-
-
 alert('Nice to meet you ' + userName + '. Since this is a page about my favorite foods why dont you try to guess a few things about me? Please guess with yes/no or y/n.');
 console.log('visitors name: ' + userName);
 
 //Do I love pizza?=q2
-var pizzaLove = prompt('Do you think I love pizza?');
-if (pizzaLove.toUpperCase() === 'YES' || pizzaLove.toUpperCase() === 'Y') {
-    alert('Of course!');
-} else {
-    alert('...I love pizza...');
-}
+do {
+    var pizzaLove = prompt('Do you think I love pizza?');
+   }while(!pizzaLove);
+   var pizzaLoveUp = pizzaLove.toUpperCase();
+   
+   if (pizzaLoveUp === 'Y'||pizzaLoveUp==='Yes'){
+      alert('Of course!');
+   } else if(pizzaLoveUp === 'N'||pizzaLoveUp==='NO'){
+     alert('...I love pizza... -.-');
+   } else {
+   alert('Your answer should have been either Yes/y or No/n but I\'ll let it slide since it\'s an easy question.');
+   }
 console.log('Do they think I like pizza?:' + pizzaLove);
 
 //Do I like hawaian pizza?=q3
