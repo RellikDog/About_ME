@@ -47,22 +47,6 @@ while(!isValid){
     alert('try again');
   }
   }
-
-
-
-
-
-/*var isValid = false;
-while(!isValid){
-var hawPiz = prompt('Not so hard because who doesn\'t love pizza? But do you think I like the most controversial of all pies? I\'m speaking, obviously, of canadian bacon and pineapple.');
-if (hawPiz.toUpperCase() === 'YES' || hawPiz.toUpperCase() === 'Y') {
-    alert('You got it!');
-} else if (hawPiz.toUpperCase() === 'NO' || hawPiz.toUpperCase() === 'N') {
-    alert('I\'m and equal oppertunity lover of all pizza toppings!');
-} else {
-    alert('Are you even trying?');
-}
-}**/
 console.log('Do they think I like hawian pizza: ' + hawPiz);
 
 //Do I like sushi?=q4
