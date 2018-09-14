@@ -1,7 +1,18 @@
 'use strict';
 
 //welcome user to my page and ask their name=q1
-var userName = prompt('Welcome to my favorite foods page! What should I call you?');
+let isValid = false;
+while(!isValid){
+    var userName = prompt('Welcome to my favorite foods page! What should I call you?');
+    if (userName == null || userName === '' || !userName){
+        alert(' you didn\'t give a valid username! try again!')
+    } else {
+        alert(userName + ' has entered the building!');
+        isValid = true;
+    }
+}
+
+
 alert('Nice to meet you ' + userName + '. Since this is a page about my favorite foods why dont you try to guess a few things about me? Please guess with yes/no or y/n.');
 console.log('visitors name: ' + userName);
 
