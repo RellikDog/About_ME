@@ -1,5 +1,5 @@
 'use strict';
-
+var numCorrect = 0;
 //welcome user to my page and ask their name=q1
 var isValid = false;
 while (!isValid) {
@@ -13,7 +13,9 @@ while (!isValid) {
 }
 alert('Nice to meet you ' + userName + '. Since this is a page about my favorite foods why dont you try to guess a few things about me? Please guess with yes/no or y/n.');
 console.log('visitors name: ' + userName);
-var numCorrect = 0;
+
+
+
 //Do I love pizza?=q2
 do {
     var pizzaLove = prompt('Do you think I love pizza?');
@@ -97,75 +99,78 @@ for (var i = 4; i > 0; i--) {
     var iTxt = i.toString();
     var quest = prompt('About how high in feet is the highest mountain I have ever climbed? You have ' + iTxt + ' guesses left');
     var questNum = parseInt(quest, 10);
-    if (questNum === answ) {
+    var questNumR = Math.round(questNum/1000)*1000;
+    if (questNumR === answ) {
         numCorrect++;
         alert('Wow ' + userName + '! You got it right!');
         break;
-    } else if (quest > answ) {
+    } else if (questNumR > answ) {
         alert('Thats too high try a lower number');
-    } else if (quest < answ) {
+    } else if (questNumR < answ) {
         alert('The mountain was taller then that. Try a higher number.');
     } else {
         alert('Please enter a number.')
     }
 }
 
-if (questNum !== answ) {
+if (questNumR !== answ) {
     alert('Don\'t worry about it that was a hard question. The correct answer was 14,000');
 }
 console.log('their last guess on q7' + quest);
 //what games do I like?=q8
 var games = ['starcraft', 'overwatch', 'poker', 'tsuro', 'settelers of catan', 'chess'];
-for (var i = 6; i > 0; i--) {
-    var iTxt = i.toString();
-    var gameQuest = prompt('I\'m a big fan of card, video, and board games.  Can you guess one of my 6 favorite games? You have ' + iTxt + ' trys left.');
-    var gameQuestUp = gameQuest.toLowerCase();
-    var gamesQCheck = 0;
-    switch (gameQuestUp) {
-        case games[0]:
-            numCorrect++;
-            gamesQCheck++;
-            alert('That\'s right I\'ve been playing Starcraft since 1999.');
-            break;
+
+    for (var i = 6; i > 0; i--) {
+        var iTxt = i.toString();
+       do{ 
+        var gameQuest = prompt('I\'m a big fan of card, video, and board games.  Can you guess one of my 6 favorite games? You have ' + iTxt + ' trys left.');
+    }while(!gameQuest);
+        var gameQuestUp = gameQuest.toLowerCase();
+        var gameQCheck = 0;
+        switch (gameQuestUp) {
+            case games[0]:
+                numCorrect++;
+                gameQCheck++;
+                alert('That\'s right I\'ve been playing Starcraft since 1999.');
+                break;
 
         case games[1]:
-            gamesQCheck++;
+            gameQCheck++;
             alert('Yes, I\'ve been playing Overwatch since it was in beta.');
             break;
 
         case games[2]:
-            gamesQCheck++;
+            gameQCheck++;
             alert('My favorite kind of poker is texas hold \'em but I enjoy the math and interpersonal aspects of all poker.');
             break;
         case games[3]:
-            gamesQCheck++;
+            gameQCheck++;
             alert('Yes and I\'m suprised you know Tsuro.');
             break;
 
         case games[4]:
-            gamesQCheck++;
+            gameQCheck++;
             alert('I\'ve only recently started playing Settelers but it is already one of my favorite games.');
             break;
 
         case games[5]:
-            gamesQCheck++;
+            gameQCheck++;
             alert('I\'ve been playing chess longer then I can remember. I\'m still not very good though so we should have a game sometime! :D');
             break;
 
         default:
-            alert('Sorry that answer is incorrect try again.');
+            alert('Sorry that answer is incorrect.');
             break;
     }
-    if (gamesQCheck === 1) {
+    if (gameQCheck === 1) {
         numCorrect++;
         break;
     }
 }
+
 alert('My 6 favorite games are ' + games[0] + ', ' + games[1] + ', ' + games[2] + ', ' + games[3] + ', ' + games[4] + ', and ' + games[5]);
 
 
-
-
-
-
+// How many you got right
+alert('You got '+numCorrect+ ' out of 7 questions right '+userName+'.');
 console.log(numCorrect);
