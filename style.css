@@ -3,6 +3,18 @@
     border: 3px dotted #000;
 }
 
+#exp{
+    width: 25%;
+    overflow: hidden;
+}
+
+#rickpic{
+    width: 25%;
+    float: right;
+    position: relative;
+    bottom: 250px;
+}
+
 .nl {
     display: inline;
 }
