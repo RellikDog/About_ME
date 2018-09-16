@@ -23,7 +23,7 @@ var piza = function () {
     } while (!pizzaLove);
     var pizzaLoveUp = pizzaLove.toUpperCase();
 
-    if (pizzaLoveUp === 'Y' || pizzaLoveUp === 'Yes') {
+    if (pizzaLoveUp === 'Y' || pizzaLoveUp === 'YES') {
         alert('Of course!');
         numCorrect++;
     } else if (pizzaLoveUp === 'N' || pizzaLoveUp === 'NO') {
