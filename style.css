@@ -1,18 +1,21 @@
 *{
     background-color: brown;
-    border: 3px dotted #000;
+    /*border: 3px dotted #000;*/
 }
 
 #exp{
     width: 25%;
     overflow: hidden;
 }
+#headline{
+    margin: 10px auto 10px auto;
+}
 
 #rickpic{
     width: 25%;
     float: right;
     position: relative;
-    bottom: 250px;
+    bottom: 33%;
 }
 
 .nl {

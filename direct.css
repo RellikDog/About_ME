@@ -1,0 +1,86 @@
+
+html {
+    height: 100%;
+  }
+  body {
+     width: 1500px;
+     height: 100%;
+    background-color:black;
+    color: white;
+      
+}
+
+  header {
+      background-color:crimson ;
+      padding: 5px;
+      font-size:2em ;
+      display: block;
+      text-align:center;
+      font-style: italic;
+      
+  }
+  nav {
+      float: left;
+      width: 100%;
+      
+  }
+  nav ul {
+      padding:5px ;
+      float: left;
+      border-bottom:2px ;
+      list-style-type: none;
+      text-align: center;
+      overflow: auto;
+      margin: auto;
+      width: 1600;
+    
+    }
+  nav li {
+    float: left;
+  }
+  nav li a {
+      display: block;
+      height: 25px;
+      padding: 12px 18px 8px 18px;
+      vertical-align: middle;
+  }
+  a {
+      color:blue ;
+  }
+  section {
+      display: inline-block;
+      float: left;
+      width:100%
+  }
+  aside {
+      width: 17%;
+      display: inline-block;
+      background-color:black;
+      padding:5px;
+      min-height: 100%;
+  }
+  aside ul {
+      list-style-type: none;
+  }
+  footer {
+      width: 790px;
+      background-color:black;
+      color:whitesmoke;
+      clear: both;
+      display: block;
+  }
+#illpizza {
+    width: 100%;
+}
+#directTable {
+    table-layout: auto;
+    margin: auto;
+    font-size: 2em;
+}
+.tableText{
+    text-align:center;
+}
+#navBar {
+    margin:auto;
+    color: blue;
+}
