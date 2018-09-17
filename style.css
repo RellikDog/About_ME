@@ -1,9 +1,9 @@
 *{
     background-color: brown;
-    /*border: 3px dotted #000;*/
+    border: 3px dotted #000;
 }
 
-}
+
 #exp{
     width: 25%;
     overflow: hidden;
@@ -11,14 +11,16 @@
 }
 #headline{
     margin: 10px auto 10px auto;
-    min-width: 500px;
+    min-width: 500px; 
+    width: 75%;
+    text-align: center;
 }
 
 #rickpic{
     width: 25%;
-    float: right;
+   float:  right;
     position: relative;
-    bottom: 200px;
+    /*bottom: 200px;*/
 }
 
 .nl {
