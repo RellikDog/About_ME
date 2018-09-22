@@ -57,23 +57,23 @@ var hawaiian = function () {
 }
 //Do I like sushi?=q4
 var sushi = function () {
-    do{
+    do {
         var sushiLove = prompt('OK let\'s try another food. Do  you think I like sushi?');
-    }while(!sushiLove);
-        if (sushiLove.toUpperCase() === 'YES' || sushiLove.toUpperCase() === 'Y') {
-            numCorrect++;
-            alert('You are correct ' + userName + '!');
-        } else {
-            alert('You have answered incorrectly ' + userName);
-        }
-    
+    } while (!sushiLove);
+    if (sushiLove.toUpperCase() === 'YES' || sushiLove.toUpperCase() === 'Y') {
+        numCorrect++;
+        alert('You are correct ' + userName + '!');
+    } else {
+        alert('You have answered incorrectly ' + userName);
+    }
+
     console.log('Do they think I like sushi?: ' + sushiLove);
 }
 //Do I like cottage cheese?=q5
 var grossCheese = function () {
-    do{
-    var cCLove = prompt('If someone offered me a free tub of cottage cheese would I take it?');
-    }while(!cCLove);
+    do {
+        var cCLove = prompt('If someone offered me a free tub of cottage cheese would I take it?');
+    } while (!cCLove);
     if (cCLove.toUpperCase() === 'YES' || cCLove.toUpperCase() === 'Y') {
         alert('NO!');
     } else if (cCLove.toUpperCase() === 'NO' || cCLove.toUpperCase() === 'N') {
@@ -88,7 +88,7 @@ var grossCheese = function () {
 var watermelon = function () {
     var wMelon = prompt('Do you think the watermelon is my favorite fruit?');
     while (!wMelon || (wMelon.toUpperCase() !== 'YES' && wMelon.toUpperCase() !== 'Y' && wMelon.toUpperCase() !== 'NO' && wMelon.toUpperCase() !== 'N')) {
-        alert('This is the last question, ' + userName + ' please submit a valid answer.');
+        alert('This is important ' + userName + ', please submit a valid answer.');
         var wMelon = prompt('Do you think the watermelon is my favorite fruit?');
     }
     if (wMelon.toUpperCase() === 'YES' || wMelon.toUpperCase() === 'Y') {
@@ -100,7 +100,8 @@ var watermelon = function () {
         alert('I don\'t klnow how you did it but congrats');
     }
     console.log('do they think that watermelon is my favorite fruit?' + wMelon);
-}//guess the highest mountain I've climbed=q7
+}
+//guess the highest mountain I've climbed=q7
 //thanks to https://gomakethings.com/converting-strings-to-numbers-with-vanilla-javascript/ for turning stings into numbers
 var mountain = function () {
     var answ = 14000;
